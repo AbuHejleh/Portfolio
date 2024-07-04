@@ -13,8 +13,8 @@ const Computers: React.FC<Props> = ({ isMobile }) => {
   var { scene } = useGLTF("./desktop_pc/scene.gltf");
   return (
     <group
-      scale={isMobile ? 0.5 : 0.73}
-      position={[1, -3.5, -1.5]}
+      scale={isMobile ? 0.395 : 0.7}
+      position={isMobile ? [1, -3.0, -0.5] : [1, -3.5, -1.5]}
       rotation={[-0.01, -0.2, -0.1]}
     >
       <hemisphereLight intensity={0.15} />
@@ -35,7 +35,7 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width:700px)");
+    const mediaQuery = window.matchMedia("(max-width:768px)");
 
     setIsMobile(mediaQuery.matches);
 
@@ -60,8 +60,8 @@ const ComputersCanvas = () => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          minPolarAngle={Math.PI / 2}
-          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 5}
+          maxPolarAngle={Math.PI / 1.9}
         />
         <Computers isMobile={isMobile} />
         <Preload all />
