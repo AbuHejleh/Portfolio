@@ -21,7 +21,7 @@ const Computers: React.FC<Props> = ({ isMobile }) => {
       <pointLight intensity={1} />
       <spotLight
         position={[0, 5, 2]}
-        angle={3}
+        angle={3.5}
         penumbra={1}
         intensity={20}
         color={"white"}
@@ -54,14 +54,14 @@ const ComputersCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={{ position: [20, 3, 5], fov: 31 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          minPolarAngle={Math.PI / 5}
-          maxPolarAngle={Math.PI / 1.9}
+          minPolarAngle={Math.PI / 2}
+          maxPolarAngle={Math.PI / 1.8}
         />
         <Computers isMobile={isMobile} />
         <Preload all />
