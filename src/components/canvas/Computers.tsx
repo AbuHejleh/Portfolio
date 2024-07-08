@@ -64,8 +64,8 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 1.8}
         />
         <Computers isMobile={isMobile} />
-        <Preload all />
       </Suspense>
+      <Preload all />
     </Canvas>
   );
 };
