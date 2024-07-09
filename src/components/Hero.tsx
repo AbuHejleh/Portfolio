@@ -21,7 +21,8 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915eff] ">Abdel Rahman</span>
           </h1>
           <p className={`${styles.heroSubText} top-2`}>
-            I develop 3D visuals, user Interfaces <br /> and web applications.
+            I develop web applications, user Interfaces <br /> and mobile
+            applications.
           </p>
         </div>
       </div>
