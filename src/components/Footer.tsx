@@ -11,7 +11,7 @@ const Footer = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 496 512"
               className=" text-textColorSecondary hover:text-textColorTertiary"
               height="16"
@@ -29,7 +29,7 @@ const Footer = () => {
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 448 512"
               className="text-textColorSecondary hover:text-textColorTertiary"
               height="16"
@@ -41,9 +41,9 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col md:flex-row space-x-2">
-          <text className="text-xs text-textColorSecondary hover:text-textColorTertiary text-center z-10">
+          <p className="text-xs text-textColorSecondary hover:text-textColorTertiary text-center z-10">
             Designed and Built by Abdel Rahman.
-          </text>
+          </p>
           <a
             href="https://www.youtube.com/watch?v=0fYi8SGA20k&amp;t=1975s"
             target="_blank"

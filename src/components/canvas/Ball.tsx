@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Decal,
@@ -21,7 +21,7 @@ const Ball = ({ imageUrl }: { imageUrl: string }) => {
         <meshStandardMaterial
           color={"#fff8eb"}
           polygonOffsetFactor={-5}
-          flatShading={true}
+          flatShading
         />
         <Decal
           rotation={[2 * Math.PI, 0, 6.25]}
@@ -34,8 +34,29 @@ const Ball = ({ imageUrl }: { imageUrl: string }) => {
 };
 
 const BallCanvas = ({ icon }: { icon: string }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width:768px)");
+
+    setIsMobile(mediaQuery.matches);
+
+    const handelMediaQueryChange = (event: MediaQueryListEvent) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handelMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handelMediaQueryChange);
+    };
+  }, []);
+
   return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas
+      frameloop={isMobile ? undefined : "always"}
+      gl={{ preserveDrawingBuffer: true }}
+    >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enableZoom={false} />
         <Ball imageUrl={icon} />

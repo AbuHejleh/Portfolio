@@ -36,13 +36,13 @@ const ServiceCard: React.FC<props> = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant(0.5)}>
+      <motion.div variants={textVariant(0.15)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
-        variants={fadeIn("", "", 1, 2)}
+        variants={fadeIn("", "", 0.25, 0.75)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
         I'm a skilled software developer with experience in TypeScript,
