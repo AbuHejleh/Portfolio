@@ -11,19 +11,21 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
-    "@react-three/drei": "^9.107.2",
     "@react-three/fiber": "^8.16.8",
+    "esm": "^3.2.25",
     "framer-motion": "^11.2.10",
     "maath": "^0.10.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.1",
     "react-tilt": "^1.0.2",
+    "react-toastify": "^10.0.5",
     "react-vertical-timeline-component": "^3.6.0",
     "three": "^0.165.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.66",
+    "@react-three/drei": "^9.108.3",
+    "@types/react": "^18.3.3",
     "@types/react-dom": "^18.2.22",
     "@types/react-vertical-timeline-component": "^3.3.6",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
