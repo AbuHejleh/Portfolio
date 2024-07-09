@@ -1,4 +1,4 @@
-import { useState, Suspense, useRef, MutableRefObject } from "react";
+import { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { PointMaterial, Points, Preload } from "@react-three/drei";
 import * as random from "maath/random";
@@ -10,7 +10,7 @@ const Stars = (props: any) => {
     radius: 1.2,
   }) as Float32Array;
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     if (ref.current) {
       ref.current.rotation.x += delta / 10;
       ref.current.rotation.y += delta / 10;

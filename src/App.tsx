@@ -3,6 +3,7 @@ import {
   About,
   Contact,
   Experience,
+  Footer,
   Hero,
   Navbar,
   StarsCanvas,
@@ -23,6 +24,7 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

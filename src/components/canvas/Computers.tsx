@@ -13,8 +13,8 @@ const Computers: React.FC<Props> = ({ isMobile }) => {
   return (
     <group
       scale={isMobile ? 0.395 : 0.7}
-      position={isMobile ? [1, -3.0, -0.5] : [1, -3.5, -1.5]}
-      rotation={[-0.01, -0.2, -0.1]}
+      position={isMobile ? [1, -3.0, -0.5] : [1, -3.5, -1]}
+      rotation={[0.0, -0.2, -0.1]}
     >
       <hemisphereLight intensity={0.15} />
       <pointLight intensity={1} />
