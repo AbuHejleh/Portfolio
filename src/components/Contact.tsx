@@ -64,7 +64,7 @@ const Contact = () => {
         "service_ttvzt0t",
         "template_k0mjrbf",
         {
-          from_name: form.name,
+          from_name: form.name + ` <${form.email}>`,
           to_name: "Abdel Rahman",
           from_email: form.email,
           message: form.message,
