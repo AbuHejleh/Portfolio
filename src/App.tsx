@@ -13,7 +13,7 @@ import Marquee from "./components/Marquee";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Portfolio">
       <div className="relative z-0 bg-ink text-bone overflow-x-hidden">
         <div className="grain" />
         <Navbar />

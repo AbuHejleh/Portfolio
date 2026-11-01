@@ -7,6 +7,7 @@ export default defineConfig({
   build: {
     chunkSizeWarningLimit: 2000, // Set a higher limit if necessary
   },
+  base: "/Portfolio/",
   server: {
     host: true,
   },
