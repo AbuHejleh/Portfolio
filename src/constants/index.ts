@@ -10,7 +10,7 @@ import {
   ats,
   htu,
   pwc,
-  threejs,
+  ejada,
 } from "../assets";
 
 export const navLinks = [
@@ -23,23 +23,48 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "tech",
+    title: "Stack",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
+];
+
+const skills = [
+  "React Native",
+  "React",
+  "TypeScript",
+  "Flutter",
+  "SwiftUI",
+  "Next.js",
+  "Three.js",
+  "Redux Toolkit",
+  "Firebase",
+  "Tailwind CSS",
+  "Kotlin",
+  "Node.js",
 ];
 
 const services = [
   {
     title: "Web Developer",
     icon: web,
+    description:
+      "React and Next.js interfaces with server rendering, careful state management and real attention to performance.",
   },
   {
     title: "Mobile Developer",
     icon: mobile,
+    description:
+      "Cross-platform apps in React Native and Flutter, plus native work in SwiftUI and Kotlin, shipped to both stores.",
   },
   {
     title: "Backend Developer",
     icon: backend,
+    description:
+      "REST APIs, Firebase, authentication and offline-first data layers that keep the front end fast and reliable.",
   },
 ];
 
@@ -59,10 +84,6 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
 ];
 
@@ -133,6 +154,25 @@ const experiences = [
       "Conducting thorough code reviews and implementing best practices for code quality and maintainability.",
     ],
   },
+  {
+    title: "React Native Developer",
+    company_name: "Ejada",
+    icon: ejada,
+    iconBg: "#fff",
+    date: "Aug 2024 - Present",
+    points: [
+      "Building and maintaining cross-platform iOS and Android apps with React Native and TypeScript.",
+      "Developing reusable, well-structured components and screens shared across features.",
+      "Managing app state with Redux Toolkit, Context API, and React Query for scalable data flows.",
+      "Implementing navigation flows, deep linking, and authentication with React Navigation.",
+      "Integrating RESTful APIs and handling network requests, caching, and offline support.",
+      "Bridging native modules and working with native iOS and Android code when needed.",
+      "Optimizing app performance by reducing re-renders, using memoization, and profiling with Flipper and React DevTools.",
+      "Writing unit and component tests with Jest and React Native Testing Library.",
+      "Preparing releases and publishing apps to the Google Play Store and Apple App Store.",
+      "Collaborating in agile teams through code reviews, sprint planning, and close work with designers and backend engineers.",
+    ],
+  },
 ];
 
-export { services, technologies, experiences };
+export { services, technologies, experiences, skills };

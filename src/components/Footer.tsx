@@ -13,7 +13,7 @@ const Footer = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 496 512"
-              className=" text-textColorSecondary hover:text-textColorTertiary"
+              className=" text-muted hover:text-acid transition-colors"
               height="16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ const Footer = () => {
               fill="currentColor"
               strokeWidth="0"
               viewBox="0 0 448 512"
-              className="text-textColorSecondary hover:text-textColorTertiary"
+              className="text-muted hover:text-acid transition-colors"
               height="16"
               width="16"
               xmlns="http://www.w3.org/2000/svg"
@@ -41,13 +41,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="flex flex-col md:flex-row space-x-2">
-          <p className="text-xs text-textColorSecondary hover:text-textColorTertiary text-center z-10">
+          <p className="text-xs text-muted hover:text-acid transition-colors text-center z-10">
             Designed and Built by Abdel Rahman.
           </p>
           <a
             href="https://www.youtube.com/watch?v=0fYi8SGA20k&amp;t=1975s"
             target="_blank"
-            className="text-xs text-textColorSecondary hover:text-textColorTertiary text-center z-10"
+            className="text-xs text-muted hover:text-acid transition-colors text-center z-10"
           >
             Inspired by Adrian Hajdin.
           </a>

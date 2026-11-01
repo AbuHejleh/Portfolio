@@ -16,6 +16,7 @@ import solutionsnow from "./company/solutionsnow.png";
 import htu from "./company/HTU.png";
 import ats from "./company/ats.png";
 import pwc from "./company/pwc.png";
+import ejada from "./company/ejada.png";
 
 export {
   logo,
@@ -34,4 +35,5 @@ export {
   ats,
   htu,
   pwc,
+  ejada,
 };

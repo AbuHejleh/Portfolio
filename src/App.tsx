@@ -9,15 +9,16 @@ import {
   StarsCanvas,
   Tech,
 } from "./components";
+import Marquee from "./components/Marquee";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
+      <div className="relative z-0 bg-ink text-bone overflow-x-hidden">
+        <div className="grain" />
+        <Navbar />
+        <Hero />
+        <Marquee />
         <About />
         <Experience />
         <Tech />

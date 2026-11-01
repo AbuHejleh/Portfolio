@@ -96,7 +96,7 @@ const Contact = () => {
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
+        className="flex-[0.75] bg-ink-100 border border-line p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -106,43 +106,43 @@ const Contact = () => {
           onSubmit={handleSubmit}
         >
           <label className="flex flex-col ">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-muted mb-2">Your Name</span>
             <input
               type="text"
               name="name"
               value={form.name}
               placeholder="What's your name?"
               onChange={handleChange}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="field"
             />
           </label>
 
           <label className="flex flex-col ">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-muted mb-2">Your Email</span>
             <input
               type="email"
               name="email"
               value={form.email}
               placeholder="What's your email?"
               onChange={handleChange}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="field"
             />
           </label>
 
           <label className="flex flex-col ">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="font-mono text-[12px] uppercase tracking-[0.18em] text-muted mb-2">Your Message</span>
             <textarea
               rows={7}
               name="message"
               value={form.message}
               placeholder="What do you want to say?"
               onChange={handleChange}
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium min-h-[120px]"
+              className="field min-h-[120px]"
             />
           </label>
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+            className="bg-acid text-ink py-3 px-8 w-fit font-mono uppercase tracking-[0.16em] text-[13px] rounded-full hover:scale-105 transition-transform"
           >
             {loading ? "Sending..." : "Send"}
           </button>
